@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd"> <!-- bean definitions here -->
+
+
+	<bean id="empBean" class="com.wipro.model.Employee">
+
+		<constructor-arg name="empo" value="1001" />
+
+		<constructor-arg name="ename" value="alok" />
+
+		<constructor-arg name="hiredDate" value="2022-05-29" />
+		<constructor-arg name="job" value="developer" />
+		<constructor-arg name="sal" value="350000.0" />
+		<constructor-arg name="deptno" value="10" />
+
+
+
+	</bean>
+
+	<bean id="empBean1" class="com.wipro.model.Employee">
+
+		<property name="empo" value="1002" />
+
+		<property name="ename" value="Praveen" />
+		<property name="hiredDate" value="2023-06-25" />
+		<property name="job" value="hr" />
+		<property name="sal" value="375000.0" />
+		<property name="deptno" value="20" />
+	</bean>
+
+
+
+</beans>
